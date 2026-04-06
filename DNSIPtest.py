@@ -46,7 +46,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('DNSIPtest.log', encoding='utf-8'),
+        logging.FileHandler('DNSIPtest.log', mode='w', encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
